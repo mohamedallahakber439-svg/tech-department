@@ -95,28 +95,29 @@ function showUploadPage(name) {
     const heading = document.createElement("h3");
     heading.textContent = "ملفات " + name;
 
-    const fileInput = document.createElement("input");
-    fileInput.type = "file";
-    fileInput.multiple = true;
-    fileInput.accept = ".pdf,application/pdf";
-    fileInput.hidden = true;
-
-    const uploadButton = document.createElement("button");
-    uploadButton.className = "main-btn";
-    uploadButton.textContent = "إضافة ملفات PDF";
-
     const filesList = document.createElement("div");
     filesList.className = "files-list";
 
-    uploadButton.onclick = () => fileInput.click();
+    const files = [
+        {
+            title: "المراجعة الأولى - الأسئلة",
+            url: "https://drive.google.com/file/d/1jhPMxptztz2ikLBSpc_mBSD74vW0jdTd/view"
+        },
+        {
+            title: "المراجعة الأولى - الإجابات",
+            url: "https://drive.google.com/file/d/1MH73HkLd02TkgZ9ORR4GEbBIYculAara/view"
+        },
+        {
+            title: "المراجعة الأولى - الشرح",
+            url: "https://drive.google.com/file/d/15p0fVl8zqo6vENM9veZmQV5dM5YTJiOb/view"
+        }
+    ];
 
-    fileInput.onchange = () => {
-        filesList.innerHTML = "";
-
-        Array.from(fileInput.files).forEach(file => {
+    if (name.includes("أمل")) {
+        files.forEach(file => {
             const link = document.createElement("a");
-            link.textContent = "📄 " + file.name;
-            link.href = URL.createObjectURL(file);
+            link.textContent = "📄 " + file.title;
+            link.href = file.url;
             link.target = "_blank";
             link.className = "main-btn";
             link.style.display = "block";
@@ -125,11 +126,11 @@ function showUploadPage(name) {
 
             filesList.appendChild(link);
         });
-    };
+    } else {
+        filesList.textContent = "لا توجد ملفات مضافة حاليًا.";
+    }
 
     contentList.appendChild(heading);
-    contentList.appendChild(fileInput);
-    contentList.appendChild(uploadButton);
     contentList.appendChild(filesList);
 }
 
@@ -140,3 +141,4 @@ function goHome() {
     sectionTitle.textContent = "";
     contentList.innerHTML = "";
 }
+
