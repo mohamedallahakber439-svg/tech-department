@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    min-height: 100vh;
+    color: white;
+    background:
+        radial-gradient(circle at 15% 15%, #17245b 0, transparent 35%),
+        radial-gradient(circle at 85% 80%, #40105b 0, transparent 35%),
+        #070b18;
+}
+
+.header {
+    text-align: center;
+    padding: 55px 15px;
+    background: linear-gradient(120deg, #111b43, #25104b, #063d50);
+    border-bottom: 2px solid #00eaff;
+    box-shadow: 0 5px 35px #00d9ff22;
+}
+
+.header h1 {
+    font-size: clamp(25px, 5vw, 42px);
+    font-weight: 900;
+    background: linear-gradient(90deg, #00eaff, #c77dff, #ff64b4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #c8d7ed;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: 45px auto;
+}
+
+.welcome {
+    text-align: center;
+    padding: 45px 20px;
+    border: 1px solid #6b58ff;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #121d39dd, #1c1235dd);
+    box-shadow: 0 0 35px #684cff20;
+    margin-bottom: 40px;
+}
+
+.welcome h2 {
+    font-size: 28px;
+    color: #d5b5ff;
+    margin-bottom: 12px;
+}
+
+.welcome p {
+    color: #b9c8dc;
+    margin-bottom: 25px;
+}
+
+.content-section {
+    margin-top: 30px;
+}
+
+.content-section h2 {
+    color: #00eaff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.main-btn {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #164caa, #6626a5);
+    color: white;
+    border: 1px solid #00eaff;
+    border-radius: 18px;
+    padding: 25px 15px;
+    font-family: inherit;
+    font-size: 19px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.35s;
+    box-shadow: 0 8px 25px #0005;
+}
+
+.main-btn:hover {
+    transform: translateY(-8px) scale(1.02);
+    border-color: #ff66c4;
+    box-shadow: 0 0 25px #00eaff66;
+}
+
+.main-btn:active {
+    transform: scale(.97);
+}
+
+.back-btn {
+    background: linear-gradient(135deg, #e52d87, #7628b9);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 30px;
+    margin-bottom: 25px;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.back-btn:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 20px #e52d8766;
+}
+
+.empty-message {
+    grid-column: 1 / -1;
+    padding: 35px 15px;
+    text-align: center;
+    background: #121d35;
+    border: 1px dashed #00d9ff;
+    border-radius: 18px;
+    color: #b9c8dc;
+    font-size: 17px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    color: #9eacc4;
+    border-top: 1px solid #283653;
+    margin-top: 70px;
+    background: #080d1a;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 94%;
+    }
+
+    .welcome {
+        padding: 30px 15px;
+    }
+
+    .welcome h2 {
+        font-size: 23px;
+    }
+
+    .main-btn {
+        padding: 20px 12px;
+    }
+}
+#teacherPassword {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #080d1d;
+    color: white;
+    border: 1px solid #00eaff;
+    border-radius: 12px;
+    font-size: 17px;
+    text-align: center;
+    outline: none;
+}
+
+#teacherPassword:focus {
+    box-shadow: 0 0 15px #00eaff77;
+}
+
+.empty-message h3 {
+    color: #00eaff;
+    margin-bottom: 15px;
+}

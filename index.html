@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كل ما يخص قسم التكنولوجيا</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <h1>كل ما يخص قسم التكنولوجيا</h1>
+    <p>مكتبة قسم تكنولوجيا التعليم</p>
+</header>
+
+<main class="container">
+
+    <section class="welcome" id="home">
+        <h2>أهلاً بيك في مكتبة القسم</h2>
+        <p>اختار القسم اللي عايز تدخله</p>
+
+        <div class="content-grid">
+            <button class="main-btn" onclick="showSection('courses')">
+                دكاترة السكاشن
+            </button>
+
+            <button class="main-btn" onclick="showSection('mainTeachers')">
+                الدكاترة الأساسيين
+            </button>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <button id="backButton" class="back-btn" onclick="goHome()" hidden>
+            رجوع
+        </button>
+
+        <h2 id="sectionTitle"></h2>
+        <div id="contentList" class="content-grid"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>تصميم وتنفيذ: محمد عبدالعال</p>
+</footer>
+
+<script src="password.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
