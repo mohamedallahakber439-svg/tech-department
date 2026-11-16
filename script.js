@@ -98,20 +98,74 @@ function showUploadPage(name) {
     const filesList = document.createElement("div");
     filesList.className = "files-list";
 
+
+function showUploadPage(name) {
+    contentList.innerHTML = "";
+
+    const heading = document.createElement("h3");
+    heading.textContent = "ملفات " + name;
+
+    const filesList = document.createElement("div");
+    filesList.className = "files-list";
+
     const files = [
         {
+            teacher: "أمل",
             title: "المراجعة الأولى - الأسئلة",
             url: "https://drive.google.com/file/d/1jhPMxptztz2ikLBSpc_mBSD74vW0jdTd/view"
         },
         {
+            teacher: "أمل",
             title: "المراجعة الأولى - الإجابات",
             url: "https://drive.google.com/file/d/1MH73HkLd02TkgZ9ORR4GEbBIYculAara/view"
         },
         {
+            teacher: "أمل",
             title: "المراجعة الأولى - الشرح",
             url: "https://drive.google.com/file/d/15p0fVl8zqo6vENM9veZmQV5dM5YTJiOb/view"
+        },
+        {
+            teacher: "زينب",
+            title: "ملف زينب 1",
+            url: "https://drive.google.com/file/d/1pEu_w-_aesswoFdTMvC62kk_5H34mZfR/view"
+        },
+        {
+            teacher: "زينب",
+            title: "ملف زينب 2",
+            url: "https://drive.google.com/file/d/1dyd5SEgLbQ2nI4RArrWjHWdVbeJhXCqr/view"
+        },
+        {
+            teacher: "زينب",
+            title: "ملف زينب 3",
+            url: "https://drive.google.com/file/d/1D7Lpm9IuV8bKSZmmQwOxRYwlUPhS-w_1/view"
         }
     ];
+
+    const teacherFiles = files.filter(file =>
+        name.includes(file.teacher)
+    );
+
+    teacherFiles.forEach(file => {
+        const link = document.createElement("a");
+        link.textContent = "📄 " + file.title;
+        link.href = file.url;
+        link.target = "_blank";
+        link.className = "main-btn";
+        link.style.display = "block";
+        link.style.margin = "10px auto";
+        link.style.maxWidth = "350px";
+
+        filesList.appendChild(link);
+    });
+
+    if (teacherFiles.length === 0) {
+        filesList.textContent = "لا توجد ملفات مضافة حاليًا.";
+    }
+
+    contentList.appendChild(heading);
+    contentList.appendChild(filesList);
+}
+
 
     if (name.includes("أمل")) {
         files.forEach(file => {
@@ -141,4 +195,5 @@ function goHome() {
     sectionTitle.textContent = "";
     contentList.innerHTML = "";
 }
+
 
