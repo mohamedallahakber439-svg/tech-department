@@ -89,14 +89,6 @@ function openItem(name) {
 }
 
 
-function showUploadPage(name) {
-    contentList.innerHTML = "";
-
-    const heading = document.createElement("h3");
-    heading.textContent = "ملفات " + name;
-
-    const filesList = document.createElement("div");
-    filesList.className = "files-list";
 
 
 function showUploadPage(name) {
@@ -141,8 +133,14 @@ function showUploadPage(name) {
         }
     ];
 
+    const normalizeName = text =>
+        String(text)
+            .replace(/[أإآ]/g, "ا")
+            .replace(/\s/g, "")
+            .trim();
+
     const teacherFiles = files.filter(file =>
-        name.includes(file.teacher)
+        normalizeName(name).includes(normalizeName(file.teacher))
     );
 
     teacherFiles.forEach(file => {
@@ -150,6 +148,7 @@ function showUploadPage(name) {
         link.textContent = "📄 " + file.title;
         link.href = file.url;
         link.target = "_blank";
+        link.rel = "noopener noreferrer";
         link.className = "main-btn";
         link.style.display = "block";
         link.style.margin = "10px auto";
@@ -167,26 +166,6 @@ function showUploadPage(name) {
 }
 
 
-    if (name.includes("أمل")) {
-        files.forEach(file => {
-            const link = document.createElement("a");
-            link.textContent = "📄 " + file.title;
-            link.href = file.url;
-            link.target = "_blank";
-            link.className = "main-btn";
-            link.style.display = "block";
-            link.style.margin = "10px auto";
-            link.style.maxWidth = "350px";
-
-            filesList.appendChild(link);
-        });
-    } else {
-        filesList.textContent = "لا توجد ملفات مضافة حاليًا.";
-    }
-
-    contentList.appendChild(heading);
-    contentList.appendChild(filesList);
-}
 
 
 function goHome() {
