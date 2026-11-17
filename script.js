@@ -146,7 +146,8 @@ function showUploadPage(name) {
             teacher: "محمد أبو الليل",
             title: "المراجعة الأولى",
             url: "https://drive.google.com/file/d/1eiMPJQQ-CNl5rts6DLXFijvsbYCjZkGD/view?usp=drivesdk"
-                    // ملفات مقرر مقدمة في علوم الحاسب
+        },
+                // ملفات مقرر مقدمة في علوم الحاسب
         {
             teacher: "مقدمة في علوم الحاسب",
             title: "شرح مقدمة في علوم الحاسب",
@@ -163,7 +164,6 @@ function showUploadPage(name) {
             teacher: "مهارات التواصل",
             title: "قنوات الاتصال",
             url: "https://drive.google.com/file/d/1tLlJENORd95_N3Xh_FuHurFeuIpeG02i/view?usp=drivesdk"
-        },
         },
         // ملفات د. ممدوح الجديدة
         {
@@ -218,6 +218,7 @@ function goHome() {
     sectionTitle.textContent = "";
     contentList.innerHTML = "";
 }
+
 
 
 
