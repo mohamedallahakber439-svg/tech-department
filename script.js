@@ -136,7 +136,17 @@ function showUploadPage(name) {
             title: "ملف زينب 3",
             url: "https://drive.google.com/file/d/1D7Lpm9IuV8bKSZmmQwOxRYwlUPhS-w_1/view"
         },
-
+        // ملفات د. محمد أبو الليل الجديدة
+        {
+            teacher: "محمد أبو الليل",
+            title: "الأسئلة + الإجابات للمراجعة الأولى",
+            url: "https://drive.google.com/file/d/1fJ0rz8nLuD-F1290LyPFK8qCrXUgrxxc/view?usp=drivesdk"
+        },
+        {
+            teacher: "محمد أبو الليل",
+            title: "المراجعة الأولى",
+            url: "https://drive.google.com/file/d/1eiMPJQQ-CNl5rts6DLXFijvsbYCjZkGD/view?usp=drivesdk"
+        },
         // ملفات د. ممدوح الجديدة
         {
             teacher: "ممدوح",
