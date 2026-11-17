@@ -6,7 +6,8 @@ const mainTeachersPasswords = {
     "د. محمد أبو الليل": "Mohamed123",
     "د. سعودي": "Saoudi123",
     "د. أمل": "Amal123",
-    "د. نسرين": "Nesreen123"
+    "د. نسرين": "Nesreen123",
+    "د. ممدوح": "Mamdooh123"
 };
 
 // كلمات سر مقررات السكاشن
@@ -17,3 +18,4 @@ const coursesPasswords = {
     "مهارات التواصل": "Communication123",
     "مقدمة في علوم الحاسب": "Computer123"
 };
+
