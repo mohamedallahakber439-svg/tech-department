@@ -12,14 +12,17 @@ const courses = [
     "مقدمة في علوم الحاسب"
 ];
 
+
 const mainTeachers = [
     "د. زينب",
     "د. أدهم",
     "د. محمد أبو الليل",
     "د. سعودي",
     "د. أمل",
-    "د. نسرين"
+    "د. نسرين",
+    "د. ممدوح"
 ];
+
 
 function showSection(type) {
     home.hidden = true;
@@ -90,7 +93,6 @@ function openItem(name) {
 
 
 
-
 function showUploadPage(name) {
     contentList.innerHTML = "";
 
@@ -101,6 +103,7 @@ function showUploadPage(name) {
     filesList.className = "files-list";
 
     const files = [
+        // ملفات د. أمل القديمة
         {
             teacher: "أمل",
             title: "المراجعة الأولى - الأسئلة",
@@ -116,6 +119,8 @@ function showUploadPage(name) {
             title: "المراجعة الأولى - الشرح",
             url: "https://drive.google.com/file/d/15p0fVl8zqo6vENM9veZmQV5dM5YTJiOb/view"
         },
+
+        // ملفات د. زينب القديمة
         {
             teacher: "زينب",
             title: "ملف زينب 1",
@@ -130,21 +135,33 @@ function showUploadPage(name) {
             teacher: "زينب",
             title: "ملف زينب 3",
             url: "https://drive.google.com/file/d/1D7Lpm9IuV8bKSZmmQwOxRYwlUPhS-w_1/view"
+        },
+
+        // ملفات د. ممدوح الجديدة
+        {
+            teacher: "ممدوح",
+            title: "المراجعة الأولى (شرح)",
+            url: "https://drive.google.com/file/d/1VgskbdI1dxEnis7pevC4GpsSQJn8A4qq/view?usp=drivesdk"
+        },
+        {
+            teacher: "ممدوح",
+            title: "الأسئلة + الإجابات",
+            url: "https://drive.google.com/file/d/1ru6X6aiIx9LAeLlYmluvPufocX68vLpK/view?usp=drivesdk"
+        },
+        {
+            teacher: "ممدوح",
+            title: "محاضرة شرح بالتفصيل",
+            url: "https://drive.google.com/file/d/1HVfFwu1-p5THG1eo6NjKKJhJVHuyomno/view?usp=drivesdk"
         }
     ];
 
-    const normalizeName = text =>
-        String(text)
-            .replace(/[أإآ]/g, "ا")
-            .replace(/\s/g, "")
-            .trim();
-
     const teacherFiles = files.filter(file =>
-        normalizeName(name).includes(normalizeName(file.teacher))
+        name.includes(file.teacher)
     );
 
     teacherFiles.forEach(file => {
         const link = document.createElement("a");
+
         link.textContent = "📄 " + file.title;
         link.href = file.url;
         link.target = "_blank";
@@ -167,12 +184,12 @@ function showUploadPage(name) {
 
 
 
-
 function goHome() {
     home.hidden = false;
     backButton.hidden = true;
     sectionTitle.textContent = "";
     contentList.innerHTML = "";
 }
+
 
 
