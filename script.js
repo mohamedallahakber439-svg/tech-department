@@ -165,6 +165,35 @@ function showUploadPage(name) {
             title: "قنوات الاتصال",
             url: "https://drive.google.com/file/d/1tLlJENORd95_N3Xh_FuHurFeuIpeG02i/view?usp=drivesdk"
         },
+                // ملفات د. سعودي
+        {
+            teacher: "سعودي",
+            title: "شرح محاضرة بالتفصيل",
+            url: "https://drive.google.com/file/d/1OiniyHsS2eKp0eeByzCv_Ttw5pwvgCjN/view?usp=drivesdk"
+        },
+        // ملفات د. أدهم
+        {
+            teacher: "أدهم",
+            title: "شرح مفصل للمحاضرة",
+            url: "https://drive.google.com/file/d/1sWC1UJD_r5oFY2VuczQQcr5nT8aGMcX8/view?usp=drivesdk"
+        },
+        {
+            teacher: "أدهم",
+            title: "شرح مفصل للمحاضرة (2)",
+            url: "https://drive.google.com/file/d/1HVfFwu1-p5THG1eo6NjKKJhJVHuyomno/view?usp=drivesdk"
+        },
+        // ملفات د. زينب
+        {
+            teacher: "زينب",
+            title: "شرح مفصل للمحاضرة",
+            url: "https://drive.google.com/file/d/11sRGSZ_fVuQHL_KhlT9wL9ge4Ib5XPwK/view?usp=drivesdk"
+        },
+        // ملفات د. نسرين
+        {
+            teacher: "نسرين",
+            title: "شرح المحاضرة بالتفصيل",
+            url: "https://drive.google.com/file/d/1CIz63ry6zoA9NCy0TS3hVQUt4-YpqpbV/view?usp=drivesdk"
+        },
         // ملفات د. ممدوح الجديدة
         {
             teacher: "ممدوح",
