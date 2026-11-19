@@ -194,6 +194,29 @@ function showUploadPage(name) {
             title: "شرح المحاضرة بالتفصيل",
             url: "https://drive.google.com/file/d/1CIz63ry6zoA9NCy0TS3hVQUt4-YpqpbV/view?usp=drivesdk"
         },
+                // ملفات د. سعودي الجديدة
+        {
+            teacher: "سعودي",
+            title: "المراجعة الثانية (مراجعة الفصل الأول بالكامل - شرح)",
+            url: "https://drive.google.com/file/d/1y6g6Ps3gjodV47LHjgY64iGxkx7pRrbd/view?usp=drivesdk"
+        },
+        {
+            teacher: "سعودي",
+            title: "أسئلة وإجابات",
+            url: "https://drive.google.com/file/d/1kpwYGaCnhtE6hBpr8jEMmdfOYOtO-1dl/view?usp=drivesdk"
+        },
+
+        // ملفات د. أمل الجديدة
+        {
+            teacher: "أمل",
+            title: "أسئلة وإجابات (مراجعة واحد)",
+            url: "https://drive.google.com/file/d/1maml3DHlyxjuui61yVSAHebH8Na-2kBe/view?usp=drivesdk"
+        },
+        {
+            teacher: "أمل",
+            title: "شرح",
+            url: "https://drive.google.com/file/d/12GXR7YCKYsKlUjGvpNZ5dTz5t24X_QZ9/view?usp=drivesdk"
+        },
         // ملفات د. ممدوح الجديدة
         {
             teacher: "ممدوح",
