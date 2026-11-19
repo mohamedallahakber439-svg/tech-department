@@ -171,6 +171,7 @@ function showUploadPage(name) {
             title: "شرح محاضرة بالتفصيل",
             url: "https://drive.google.com/file/d/1OiniyHsS2eKp0eeByzCv_Ttw5pwvgCjN/view?usp=drivesdk"
         },
+        
         // ملفات د. أدهم
         {
             teacher: "أدهم",
@@ -217,6 +218,12 @@ function showUploadPage(name) {
             title: "شرح",
             url: "https://drive.google.com/file/d/12GXR7YCKYsKlUjGvpNZ5dTz5t24X_QZ9/view?usp=drivesdk"
         },
+                // ملفات د. ممدوح الجديدة
+        {
+            teacher: "ممدوح",
+            title: "محاضرة دكتور ممدوح 2026/12/18",
+            url: "https://drive.google.com/file/d/14e_-8RyzSsoB43caK4NVCpiLuWzSr2N5/view?usp=drivesdk"
+        },
         // ملفات د. ممدوح الجديدة
         {
             teacher: "ممدوح",
@@ -225,7 +232,7 @@ function showUploadPage(name) {
         },
         {
             teacher: "ممدوح",
-            title: "الأسئلة + الإجابات",
+            title: "_لمراجعة الأولى الأسئلة + الإجابات",
             url: "https://drive.google.com/file/d/1ru6X6aiIx9LAeLlYmluvPufocX68vLpK/view?usp=drivesdk"
         },
         {
@@ -233,6 +240,7 @@ function showUploadPage(name) {
             title: "محاضرة شرح بالتفصيل",
             url: "https://drive.google.com/file/d/1HVfFwu1-p5THG1eo6NjKKJhJVHuyomno/view?usp=drivesdk"
         }
+        
     ];
 
     const teacherFiles = files.filter(file =>
@@ -270,7 +278,6 @@ function goHome() {
     sectionTitle.textContent = "";
     contentList.innerHTML = "";
 }
-
 
 
 
