@@ -102,7 +102,7 @@ function showUploadPage(name) {
     const filesList = document.createElement("div");
     filesList.className = "files-list";
 
-    const files = [
+ const files = [
         // ملفات د. أمل القديمة
         {
             teacher: "أمل",
@@ -136,6 +136,7 @@ function showUploadPage(name) {
             title: "ملف زينب 3",
             url: "https://drive.google.com/file/d/1D7Lpm9IuV8bKSZmmQwOxRYwlUPhS-w_1/view"
         },
+
         // ملفات د. محمد أبو الليل الجديدة
         {
             teacher: "محمد أبو الليل",
@@ -147,7 +148,8 @@ function showUploadPage(name) {
             title: "المراجعة الأولى",
             url: "https://drive.google.com/file/d/1eiMPJQQ-CNl5rts6DLXFijvsbYCjZkGD/view?usp=drivesdk"
         },
-                // ملفات مقرر مقدمة في علوم الحاسب
+
+        // ملفات مقرر مقدمة في علوم الحاسب
         {
             teacher: "مقدمة في علوم الحاسب",
             title: "شرح مقدمة في علوم الحاسب",
@@ -165,13 +167,14 @@ function showUploadPage(name) {
             title: "قنوات الاتصال",
             url: "https://drive.google.com/file/d/1tLlJENORd95_N3Xh_FuHurFeuIpeG02i/view?usp=drivesdk"
         },
-                // ملفات د. سعودي
+
+        // ملفات د. سعودي
         {
             teacher: "سعودي",
             title: "شرح محاضرة بالتفصيل",
             url: "https://drive.google.com/file/d/1OiniyHsS2eKp0eeByzCv_Ttw5pwvgCjN/view?usp=drivesdk"
         },
-        
+
         // ملفات د. أدهم
         {
             teacher: "أدهم",
@@ -183,19 +186,22 @@ function showUploadPage(name) {
             title: "شرح مفصل للمحاضرة (2)",
             url: "https://drive.google.com/file/d/1HVfFwu1-p5THG1eo6NjKKJhJVHuyomno/view?usp=drivesdk"
         },
+
         // ملفات د. زينب
         {
             teacher: "زينب",
             title: "شرح مفصل للمحاضرة",
             url: "https://drive.google.com/file/d/11sRGSZ_fVuQHL_KhlT9wL9ge4Ib5XPwK/view?usp=drivesdk"
         },
+
         // ملفات د. نسرين
         {
             teacher: "نسرين",
             title: "شرح المحاضرة بالتفصيل",
             url: "https://drive.google.com/file/d/1CIz63ry6zoA9NCy0TS3hVQUt4-YpqpbV/view?usp=drivesdk"
         },
-                // ملفات د. سعودي الجديدة
+
+        // ملفات د. سعودي الجديدة
         {
             teacher: "سعودي",
             title: "المراجعة الثانية (مراجعة الفصل الأول بالكامل - شرح)",
@@ -218,13 +224,13 @@ function showUploadPage(name) {
             title: "شرح",
             url: "https://drive.google.com/file/d/12GXR7YCKYsKlUjGvpNZ5dTz5t24X_QZ9/view?usp=drivesdk"
         },
-                // ملفات د. ممدوح الجديدة
+
+        // ملفات د. ممدوح الجديدة
         {
             teacher: "ممدوح",
             title: "محاضرة دكتور ممدوح 2026/12/18",
             url: "https://drive.google.com/file/d/14e_-8RyzSsoB43caK4NVCpiLuWzSr2N5/view?usp=drivesdk"
         },
-        // ملفات د. ممدوح الجديدة
         {
             teacher: "ممدوح",
             title: "المراجعة الأولى (شرح)",
@@ -239,8 +245,17 @@ function showUploadPage(name) {
             teacher: "ممدوح",
             title: "محاضرة شرح بالتفصيل",
             url: "https://drive.google.com/file/d/1HVfFwu1-p5THG1eo6NjKKJhJVHuyomno/view?usp=drivesdk"
+        },
+        {
+            teacher: "ممدوح",
+            title: "المراجعة الثانية _ دكتور ممدوح _ جزء الاسئلة + الاجابات",
+            url: "https://drive.google.com/file/d/1vWfSMq8jB9-NZjIK5LA_SYT04ZwXtgy6/view?usp=drivesdk"
+        },
+        {
+            teacher: "ممدوح",
+            title: "المراجعة الثانية _ دكتور ممدوح _ جزء ( الشرح )",
+            url: "https://drive.google.com/file/d/1yv3nn57XUUaz1X3ID03TKYJ5FLyaekT_/view?usp=drivesdk"
         }
-        
     ];
 
     const teacherFiles = files.filter(file =>
